@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:to_do/my_theme.dart';
 
 import 'home/home_screen.dart';
 
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Home_Screen.routeName,
       routes: {
-        Home_Screen.routeName :(context) => Home_Screen(),
+        Home_Screen.routeName: (context) => Home_Screen(),
       },
+      theme: my_Theme.lightTheme,
     );
   }
 }
